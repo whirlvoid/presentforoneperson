@@ -60,15 +60,7 @@ html,body{
 .image{
     height: 400px;
 }
-.nopiter{
-    width: 100dvw ;
-    height: 100dvh ;
-    display:  flex;
-    justify-content: center;
-    align-items: center;
-}
 .peter{
-    background-image: url('assets/piter.png');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100dvw ;

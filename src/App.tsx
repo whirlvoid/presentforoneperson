@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import vibr from '/assets/vibr.png'
 import sound from '/assets/audio1.mp3'
+import piter from '/assets/piter.png';
 
 const MovingElement = () => {
   const audioRef = useRef(new Audio(sound)); // Сохраняем Audio в useRef
@@ -47,7 +48,9 @@ const MovingElement = () => {
   }, [isMoving]); // Зависимость от isMoving
 
   return (
-    <div className={isPeter ? 'peter': 'nopiter'}>
+    <div className='peter' style={{
+  ...(isPeter && { backgroundImage: `url(${piter})` })
+}}>
       <div className='main'>
        <div
         style={{
